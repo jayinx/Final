@@ -1,0 +1,50 @@
+body {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.rec{
+	position: absolute;
+	background-color: white;
+	left: 70%;
+	top: 55%;
+	width: 4em;
+	height: 4em;
+	z-index: 999;
+}
+.rec:hover{
+	background-color: black;
+}
+
+.pieces {
+	display: flex;
+	flex-wrap: wrap;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.heart{
+	position: absolute;
+	top:8%;
+	left: 10%;
+	width: 35vw;
+}
+
+/* Content */
+.content {
+	position: absolute;
+	left: 55%;
+	top:8%;
+	--pieces-width:35vw;
+}
+
+.grid .pieces {
+	width: var(--pieces-width);
+	height: calc(var(--pieces-width) * 1.3157);
+}
+
+.grid .piece {
+	pointer-events: none;
+}

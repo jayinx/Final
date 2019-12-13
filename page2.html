@@ -15,57 +15,76 @@
     
     <!-- import the webpage's stylesheet -->
     <style>
-        
 
-body{
-margin:0;
-padding:0;
-width:100%;
-height:100vh;
-background-color: white;
-overflow: hidden;
-font-family: 'Edo SZ', cursive;
-}
+        body{
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100vh;
+        background-color: white;
+        overflow: hidden;
+        font-family: 'Edo SZ', cursive;
+        }
 
-.textsta{
-  position: absolute;
-  left:38%;
-  top: 15%;
-  width:20em;
-}
+        .textsta{
+          position: absolute;
+          left:38%;
+          top: 15%;
+          width:20em;
+        }
 
 
-.text{
-  position: absolute;
-  left:38%;
-  top: 15%;
-  width:20em;
-  cursor: pointer;
-}
+        .text{
+          position: absolute;
+          left:38%;
+          top: 15%;
+          width:20em;
+          cursor: pointer;
+        }
 
-.text:hover {
- display:none;
-}
+        .text:hover {
+         display:none;
+        }
 
-.eyeopen{
-  position: absolute;
-  transform: translate(-50%, -60%);
-  left: 50%;
-  top: 60%;
-  width:50em;
-}
-      
-.eyeclosed{
-  position: absolute;
-  transform: translate(-50%, -60%);
-  left: 50%;
-  top: 60%;
-  width:50em;
-}
+        .eyeopen{
+          position: absolute;
+          transform: translate(-50%, -60%);
+          left: 50%;
+          top: 60%;
+          width:50em;
+        }
+              
+        .eyeclosed{
+          position: absolute;
+          transform: translate(-50%, -60%);
+          left: 50%;
+          top: 60%;
+          width:50em;
+        }
 
-.eyeclosed:hover {
-  display: none;
-}
+        .eyeclosed:hover {
+          display: none;
+        }
+
+         @media only screen and (max-width: 800px){
+
+        .container{
+          display: none;
+        }
+
+        .text{
+          display: none;
+        }
+
+        a{
+          width: 5%;
+          position: absolute;
+          left:6%;
+          top: 50%;
+        }
+
+
+         }
     </style>
     
   </head>  

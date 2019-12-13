@@ -23,14 +23,36 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
+
+    h1{
+        display: none;
+    }
+
+     @media only screen and (max-width: 800px){
+        .dt{
+            display: none;
+        }
+
+        h1{
+            display: block;
+            font-size: 1em;
+            position: absolute;
+            top:50%;
+            left:20%;
+            right:20%;
+            text-decoration-style: none;
+            color: white;
+            font-family: Edo SZ;
+     }
+
     </style>
     <link href="https://cdn.glitch.com/b70fcefb-87ef-447f-8834-be0fdc077845%2Fedosz.ttf?v=1574784061289" rel="stylesheet">
 
 </head>
 <body>
 
-    <a href="page6.html"><div id="main"></div></a>
-
+    <a class ="dt"href="page6.html"><div id="main"></div></a>
+    <a href="page6.html"><h1>YOU UNDERSTAND ME IN A WAY THAT NO ONE ELSE CAN.</h1></a>
 <script>
 
     container = document.getElementById("main");
